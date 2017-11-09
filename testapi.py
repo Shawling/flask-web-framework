@@ -16,7 +16,7 @@ para = {
     'time_from': time.mktime(time.strptime('2017-11-08 00:00:00', '%Y-%m-%d %H:%M:%S')),
     'time_to': time.mktime(time.strptime('2017-11-09 00:00:00', '%Y-%m-%d %H:%M:%S'))
 }
-
+print(para)
 response = requests.get(domain + url, params=para)
 if not response.status_code == 200:
     print(response.text)
